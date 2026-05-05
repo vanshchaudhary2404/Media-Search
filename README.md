@@ -1,55 +1,129 @@
-# MediaSearch
+# 🚀 MediaSearch
 
-MediaSearch is a React + Vite app for searching photos, videos, and GIFs, then saving favorites to a local collection with Redux.
+A multi-source media search application that allows users to explore **GIFs, Images, and Videos** from different platforms in one place and manage them using a collection system powered by Redux.
 
-## Features
+---
 
-- Search across photos, videos, and GIFs
-- Switch media type with tabs
-- Save items to a personal collection
-- Remove items or clear the full collection
-- Responsive UI built with Tailwind CSS
+## 🌐 Live Demo
 
-## Tech Stack
+👉 https://mediaearch.netlify.app/
 
-- React
-- Vite
-- Redux Toolkit
-- React Router
-- Tailwind CSS
-- Axios
+---
 
+## 📌 Features
 
-## Setup
+* 🔍 Search **GIFs (Tenor API)**
+* 🖼️ Search **Images (Unsplash API)**
+* 🎥 Search **Videos (Pexels API)**
+* 📁 Add media to **Collection**
+* ❌ Remove individual items from collection
+* 🧹 Clear entire collection
+* ⚡ Global state management using **Redux**
+* 📱 Responsive UI
 
-1. Install dependencies:
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React + Vite
+* **State Management:** Redux
+* **APIs:** Tenor, Unsplash, Pexels
+* **Deployment:** Netlify
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/Media-Search.git
+
+# Navigate to project
+cd Media-Search
+
+# Install dependencies
 npm install
-```
 
-2. Create a `.env` file in the project root and add your API keys:
-
-```env
-VITE_UNSPLASH_API_KEY=your_unsplash_key
-VITE_PEXELS_API_KEY=your_pexels_key
-VITE_GIPHY_API_KEY=your_giphy_key
-```
-
-3. Start the development server:
-
-```bash
+# Start development server
 npm run dev
 ```
 
-## Scripts
+---
 
-- `npm run dev` - start the local dev server
-- `npm run build` - create a production build
-- `npm run preview` - preview the production build locally
-- `npm run lint` - run ESLint
+## 🔑 Environment Variables
 
-## Notes
+Create a `.env` file in root and add:
 
-- Make sure the API keys are valid before searching.
-- If the app opens on a different port, use the local URL shown in the terminal.
+```env
+VITE_TENOR_API_KEY=your_key
+VITE_UNSPLASH_API_KEY=your_key
+VITE_PEXELS_API_KEY=your_key
+```
+
+⚠️ Do NOT commit `.env` file.
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 📂 Project Structure
+
+```
+Media-Search/
+│── public/
+│── src/
+│   ├── components/
+│   ├── redux/
+│   ├── pages/
+│   └── App.jsx
+│── .gitignore
+│── package.json
+│── vite.config.js
+```
+
+---
+
+## 🚀 Deployment
+
+Deployed using **Netlify**
+
+* Build Command: `npm run build`
+* Publish Directory: `dist`
+
+---
+
+## 🧠 Learning Objective
+
+The main goal of this project is to **implement and understand Redux** for efficient global state management, including:
+
+* Actions & Reducers
+* Centralized Store
+* Predictable State Flow
+
+---
+
+## 🔥 Future Improvements
+
+* 🔐 Add backend (Node.js) to secure API keys
+* 💾 Persist collection using database
+* 🔎 Add filters & sorting
+* ⚡ Improve performance with caching & debouncing
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first.
+
+---
+
+## 📧 Contact
+
+Vansh Chaudhary
+GitHub: https://github.com/vanshchaudhary2404
