@@ -35,7 +35,7 @@ const ResultCard = ({item}) => {
           onClick={()=>{
             addToCollection(item)
           }} 
-          className='shrink-0 rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition active:scale-95 hover:bg-indigo-400'
+          className='shrink-0 rounded-full bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition active:scale-95 cursor-pointer hover:bg-indigo-400'
         >
           Save
         </button>
