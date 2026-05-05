@@ -11,7 +11,9 @@ const SearchBar = () => {
 
   const submitHandler =(e)=>{
     e.preventDefault()
-    dispatch(setQuery(text))
+    if(text.trim()) {
+      dispatch(setQuery(text))
+    }
     setText('')
   }
  

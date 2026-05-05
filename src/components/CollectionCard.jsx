@@ -27,7 +27,7 @@ const CollectionCard = ({item}) => {
           onClick={()=>{
             removeFromCollection(item)
           }} 
-          className='shrink-0 rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-rose-500/25 transition hover:bg-rose-400 active:scale-95'
+          className='shrink-0 rounded-full bg-rose-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-rose-500/25 transition cursor-pointer hover:bg-rose-400 active:scale-95'
         >
           Remove
         </button>
